@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript" src="jquery.min.js"></script>
+<title>New HMTL document by NewJect</title>
+    <style type="text/css">
+        #p{
+            margin-left: 10%;
+            margin;
+        }
+          #tog{
+            text-align: center;
+              margin-left: 10%;
+        }
+    </style>
+</head>
+<body>
+    <p id="p">Hello, I am mohit.</p>
+    <button id="tog">Toggle Text</button>
+    <script type="text/javascript">
+        var display = true;
+        $("#tog").click(function(){
+           if(display){
+               $("#p").fadeOut(function(){
+                  display=false; 
+               });
+           }else{
+               $("#p").fadeIn(function(){
+                  display=true; 
+               });
+           }
+        });
+        $("#b").click(function(){
+           $("#p").fadeOut(); 
+        });
+    </script>
+</body>
+</html>
